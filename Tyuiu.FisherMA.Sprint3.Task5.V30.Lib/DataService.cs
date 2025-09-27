@@ -12,10 +12,9 @@ namespace Tyuiu.FisherMA.Sprint3.Task5.V30.Lib
             {
                 for (int k = startValue2; k <= stopValue2; k++)
                 {
-                    sum += Math.Pow(x, 3) - k;
+                    sum += Math.Pow(x, 3) - k + x;
                 }
             }
-            sum += x;
             return Math.Round(sum, 3);
         }
     }
