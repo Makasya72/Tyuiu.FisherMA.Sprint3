@@ -1,4 +1,5 @@
-﻿using Tyuiu.FisherMA.Sprint3.Task0.V3.Lib;
+﻿using System;
+using Tyuiu.FisherMA.Sprint3.Task0.V3.Lib;
 
 namespace Tyuiu.FisherMA.Sprint3.Task0.V3
 {
@@ -7,7 +8,7 @@ namespace Tyuiu.FisherMA.Sprint3.Task0.V3
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-            double res = ds.CalculateSeries();
+            double res = ds.GetSumSeries(1, 10);
 
             Console.Title = "Спринт #3 | Выполнил: Фишер М. A. | ИИПб-25-1";
             Console.WriteLine("***************************************************************************");
@@ -23,6 +24,7 @@ namespace Tyuiu.FisherMA.Sprint3.Task0.V3
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine(res);
+            Console.ReadKey();
         }
     }
 }
