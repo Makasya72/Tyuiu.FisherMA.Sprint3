@@ -1,5 +1,5 @@
-﻿using Tyuiu.FisherMA.Sprint3.Task0.V3.Lib;
-
+﻿
+using Tyuiu.FisherMA.Sprint3.Task0.V3.Lib;
 
 namespace Tyuiu.FisherMA.Sprint3.Task0.V3.Test
 {
@@ -12,7 +12,7 @@ namespace Tyuiu.FisherMA.Sprint3.Task0.V3.Test
             DataService ds = new DataService();
             double res = ds.GetSumSeries(1, 10);
 
-            double expected = 0.593;
+            double expected = 0.353;
             Assert.AreEqual(expected, res);
         }
     }

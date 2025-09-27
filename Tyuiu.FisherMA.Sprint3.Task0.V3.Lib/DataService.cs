@@ -1,4 +1,6 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint3;
+﻿
+using tyuiu.cources.programming.interfaces.Sprint3;
+
 
 namespace Tyuiu.FisherMA.Sprint3.Task0.V3.Lib
 {
@@ -9,7 +11,7 @@ namespace Tyuiu.FisherMA.Sprint3.Task0.V3.Lib
             double sum = 0;
             for (int i = startValue; i <= stopValue; i++)
             {
-                sum += Math.Sin(i) * Math.Pow(0.5, i);
+                sum += Math.Cos(i) * Math.Pow(0.5, i); 
             }
             return Math.Round(sum, 3);
         }
